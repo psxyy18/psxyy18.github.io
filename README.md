@@ -1,62 +1,43 @@
 # SurVis - Visual Literature Browser
 
-![Screenshot](/doc/survis.png)
+![Screenshot](/doc/screenshot.png)
+
+# A Comprehensive Review of Space Biology Research and its Challenges Introduction and Motivation
+
+This repository hosts a SurVis literature browser web page for my literature review on 'Interpretable Machine Learning for Comparing Astronaut Biological Data to Disease Cohorts on Earth: Machine Learning & Bioinformatics'. Visit the SurVis page here: https://psxyy18.github.io/survis/
+
+## SurVis
 
 SurVis is a flexible online browser to present and analyze scientific literature. The system is made for authors of survey articles, theses, or books who want to share their references in a user-friendly way. All you need to start is a bib file and a list of keywords for your papers.
 
-Test SurVis with a reference literature database: http://dynamicgraphs.fbeck.com
+Original SurVis repository: https://github.com/fabian-beck/survis
 
-## How To Use SurVis for Your Literature Collection
+## Literature Collection
 
-Dowload the latest SurVis release or fork this repository.
+This SurVis instance is based on the following papers:
 
-To start SurVis, open 'src/index.html' in your browser.
+1. "Routine omics collection is a golden opportunity for European human research in space and analog environments" by Henry Cope, Craig R.G. Willis, Matthew J. MacKay, Lindsay A. Rutter, Li Shean Toh, Philip M. Williams, Raúl Herranz, Joseph Borg, Daniela Bezdan, Stefania Giacomello, Masafumi Muratani, Christopher E. Mason, Timothy Etheridge, and Nathaniel J. Szewczyk.
 
-The bibliography data is stored in 'bib/references.bib' in BibTeX format.
+2. "Private Spaceflight: A New Landscape for Dealing with Medical Risk" by Yuri V. Griko, David J. Loftus, Viktor Stolc, Elena Peletskaya.
 
-Supplemental data is contained in 'src/data/':
-* 'tag_categories.js': list of special tag categories; they can be used as a prefix for the tags and appear, for instance, 'a:b' refers to tag 'b' in tag category 'a'
-* 'authorized_tags.js': tags that are defined through a description (highlighted in SurVis, description appears as a tooltip)
-* 'search_stopwords.js': a list of stopwords used to exclude terms from search queries
-* 'papers_pdf' (optional): PDF files of the papers, please use the BibTeX id as a file name
-* 'papers_img' (optional): PNG thumbnails for the papers, please use the BibTeX id as a file name
+3. "Fundamental Biological Features of Spaceflight: Advancing the Field to Enable Deep-Space Exploration", by Ebrahim Afshinnekoo, Ryan T. Scott, Matthew J. MacKay, Eloise Pariset, Egle Cekanaviciute, Richard Barker, Simon Gilroy, Duane Hassane, Scott M. Smith, Sara R. Zwart, Mayra Nelman-Gonzalez, Brian E. Crucian, Sergey A. Ponomarev, Oleg I. Orlov, Dai Shiba, Masafumi Muratani, Masayuki Yamamoto, Stephanie E. Richards, Parag A. Vaishampayan, Cem Meydan, and Jonathan Foox.
 
-Please do not edit the files in 'src/data/generated/' because they are created automatically. 
+4. "Sarcolab pilot study into skeletal muscle’s adaptation to long-term spaceflight" by Jörn Rittweger, Kirsten Albracht, Martin Flück, Severin Ruoss, Lorenza Brocca, Emanuela Longa, Manuela Moriggi, Olivier Seynnes, Irene Di Giulio, Leonardo Tenori, Alessia Vignoli, Miriam Capri, Cecilia Gelfi, Claudio Luchinat, Claudio Franceschi, Roberto Bottinelli, Paolo Cerretelli & Marco Narici.
 
-After completing your changes, just run 'update_data.py' with Python 3. Reload SurVis in the browser to see the changed bibliography. The script will continue to check for updates on the bib file until you stop it.
+5. "Pre-flight exercise and bone metabolism predict unloading-induced bone loss due to spaceflight" by Leigh Gabel, Anna-Maria Liphardt, Paul A Hulme, Martina Heer, Sara R Zwart, Jean D Sibonga, Scott M Smith, and Steven K Boyd.
 
-If the edit mode is activated, BibTeX entries can be modified in the browser, but are not stored in the 'bib' directory. To make those changes persistent, use 'download BibTex' in SurVis and copy the BibTeX data to your bib file in the 'bib' directory. You can also use the features to save and load the data from local storage of the browser; be careful, however, these features are still experimental.
+6. "Space Flight–Associated Neuro-ocular Syndrome" by Andrew G. Lee, MD; Thomas H. Mader, MD; C. Robert Gibson, OD; William Tarver, MD, MPH.
 
-Further properties of SurVis, such as the title of the page, can be modified in the file 'src/properties.js'. For the publication of your literature collection, you should usually deactivate the edit mode in the properties ('editable = false;').
+7. "A New Era for Space Life Science: International Standards for Space Omics Processing" by Lindsay Rutter, Richard Barker, Daniela Bezdan, Henry Cope, Sylvain V. Costes, Lovorka Degoricija, Kathleen M. Fisch, Mariano I. Gabitto, Samrawit Gebre, Stefania Giacomello, Simon Gilroy, Stefan J. Green, Christopher E. Mason, Sigrid S. Reinsch, Nathaniel J. Szewczyk, Deanne M. Taylor, Jonathan M. Galazka, Raul Herranz, and Masafumi Muratani.
 
-Enjoy SurVis and send feedback if you like.
+8. "'White Mars' – nearly two decades of biomedical research at the Antarctic Concordia station" by Angelique Van Ombergen, Andrea Rossiter, Thu Jennifer Ngo-Anh.
 
-## Learn more
+9. "First measurements of the radiation dose on the lunar surface" by Shenyi Zhang, Robert F. Wimmer-Schweingruber, Jia Yu, et al.
 
-We've published a paper about SurVis at VAST 2015 - please reference it if you use or want to refer to SurVis in one of your publications. 
+10. "Measurements of Energetic Particle Radiation in Transit to Mars on the Mars Science Laboratory", by C. Zeitlin, D. M. Hassler, F. A. Cucinotta, B. Ehresmann, R. F. Wimmer-Schweingruber, D. E. Brinza, S. Kang, G. Weigle, S. Böttcher, E. Böhm, S. Burmeister, J. Guo, J. Köhler, C. Martin, A. Posner, S. Rafkin, and G. Reitz.
 
-Beck, Fabian; Koch, Sebastian; Weiskopf, Daniel: Visual Analysis and Dissemination of Scientific Literature Collections with SurVis. In: IEEE Transactions on Visualization and Computer Graphics (2015).
-
-* DOI: http://dx.doi.org/10.1109/TVCG.2015.2467757
-* Preview video: https://vimeo.com/136206061 
-
-## List of Literature Collections Using Survis
-
-* Dynamic Graph Visualization - http://dynamicgraphs.fbeck.com
-* Visualizing Group Structures in Graphs - http://go.visus.uni-stuttgart.de/groups-in-graphs/
-* Performance Visualization - http://idav.ucdavis.edu/~ki/STAR/
-* Visualization for Software Reuse - http://www.cos.ufrj.br/~schots/survis_reuse/
-* Set Visualization - http://www.cvast.tuwien.ac.at/~alsallakh/SetViz/literature/www/index.html
-* Visualizing High-Dimensional Data - http://www.sci.utah.edu/~shusenl/highDimSurvey/website/
-
-Please contact me (fabian.beck@visus.uni-stuttgart.de) if you know other collections using SurVis.
 
 ## Contact
 
-Fabian Beck
+If you have any questions or feedback regarding this literature review, please contact me at psxyy18@gmail.com.
 
-VISUS, University of Stuttgart
-
-fabian.beck@visus.uni-stuttgart.de
-
-http://research.fbeck.com
