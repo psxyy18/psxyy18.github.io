@@ -1,10 +1,10 @@
 # SurVis - Visual Literature Browser
 
-![Screenshot](/doc/screenshot.png)
+![Screenshot](/screenshot.png)
 
 # A Comprehensive Review of Space Biology Research and its Challenges Introduction and Motivation
 
-This repository hosts a SurVis literature browser web page for my literature review on 'Interpretable Machine Learning for Comparing Astronaut Biological Data to Disease Cohorts on Earth: Machine Learning & Bioinformatics'. Visit the SurVis page here: https://psxyy18.github.io/survis/
+This repository hosts a SurVis literature browser web page for my literature review on 'Interpretable Machine Learning for Comparing Astronaut Biological Data to Disease Cohorts on Earth: Machine Learning & Bioinformatics'. Visit the SurVis page here: https://psxyy18.github.io/index.html
 
 ## SurVis
 
